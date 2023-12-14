@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "grokking"
+version = "0.1.0"
+description = "Grokking Algorithms lab"
+authors = ["Jean-Pierre Chauvel <jean.p.chauvel@gmail.com>"]
+license = "CC0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
