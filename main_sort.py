@@ -10,7 +10,7 @@ from rand import randomized_list
 def config_arguments():
     parser = argparse.ArgumentParser(
         description="calls a sort function from a given module, builds a"
-        " randomized list of integers from the optional parameters and print th"
+        " randomized list of integers from the optional parameters and print the"
         " time spent to sort said list."
     )
     parser.add_argument(
