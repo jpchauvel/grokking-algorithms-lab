@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-def binary_search(array, item):
+from typing import List
+
+
+def binary_search(array: List, item: int):
     low = 0
     high = len(array) - 1
     while low <= high:
