@@ -11,5 +11,5 @@ def main():
     print(gcd(270, 192))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
