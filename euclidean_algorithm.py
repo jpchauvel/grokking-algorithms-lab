@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def gcd(a, b):
+def gcd(a: int, b: int):
     if a == 0:
         return b
     elif b == 0:
