@@ -10,8 +10,8 @@ from rand import randomized_list
 def config_arguments():
     parser = argparse.ArgumentParser(
         description="calls a sort function from a given module, builds a"
-        " randomized list of integers from the optional parameters and print the"
-        " time spent to sort said list."
+        " randomized list of integers from the optional parameters and print "
+        " the time spent to sort said list."
     )
     parser.add_argument(
         "-m",
@@ -60,9 +60,13 @@ def main():
     array = randomized_list(args.size, args.lower_bound, args.upper_bound)
     sort = get_sort_func(args.module, args.function)
     start = datetime.datetime.now()
-    sort(array)
-    duration = (datetime.datetime.now() - start).microseconds
-    print(f"{args.function or args.module}: {duration/100} ms")
+    array = sort(array)
+    end = datetime.datetime.now()
+    duration = end - start
+    print(
+        f"{args.function or args.module}: "
+        f"{duration.seconds * 1000 + duration.microseconds/1000} ms"
+    )
 
 
 if __name__ == "__main__":
