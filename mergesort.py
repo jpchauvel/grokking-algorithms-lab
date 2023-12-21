@@ -17,11 +17,9 @@ def _merge(left: List, right: List) -> List:
     result = []
     while len(left) > 0 and len(right) > 0:
         if left[0] <= right[0]:
-            result.append(left[0])
-            left = left[1:]
+            result.append(left.pop(0))
         else:
-            result.append(right[0])
-            right = right[1:]
+            result.append(right.pop(0))
     result.extend(left)
     result.extend(right)
     return result
