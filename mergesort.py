@@ -6,13 +6,8 @@ def mergesort(array: List) -> List:
     if array_len <= 1:
         return array
 
-    left = []
-    right = []
-    for i, item in enumerate(array):
-        if i < array_len // 2:
-            left.append(item)
-        else:
-            right.append(item)
+    left = array[:array_len // 2]
+    right = array[array_len // 2:]
     left = mergesort(left)
     right = mergesort(right)
     return _merge(left, right)
