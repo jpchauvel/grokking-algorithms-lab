@@ -1,14 +1,14 @@
 Grokking Algorithms lab
 =======================
 
-Some own experiments and excersices from the book.
+Some own experiments and exercises from the book.
 
 Link to the book: [Grokking Algorithms - Manning](https://www.manning.com/books/grokking-algorithms)
 
 
 Installation:
 ```bash
-poetry install
+uv sync
 ```
 
 Usage:
@@ -32,10 +32,10 @@ options:
 
 Example 1. Run bubble_sort function from bubble_sort module with an input list of 10k elements:
 ```bash
-poetry run ./main_sort.py -m bubble_sort -s 10000 
+uv run ./main_sort.py -m bubble_sort -s 10000 
 ```
 
 Example 2. Run library_sort_epsilon_4 function from library_sort module with an input list of 20k elements:
 ```bash
-poetry run ./main_sort.py -m library_sort -f library_sort_epsilon_4 -s 20000
+uv run ./main_sort.py -m library_sort -f library_sort_epsilon_4 -s 20000
 ```
